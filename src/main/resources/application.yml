@@ -1,0 +1,23 @@
+ # spring.devtools.restart.enable=false
+ spring:
+  
+  devtools:
+    restart:
+      enabled: false
+ 
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/${DATABASE_NAME}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+ 
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: false
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false   
+        
+ url:
+    frontend: http://localhost:3000/
